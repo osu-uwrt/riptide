@@ -1,0 +1,6 @@
+[submodule "riptide-ros"]
+	path = riptide-ros
+	url = https://github.com/osu-uwrt/riptide-ros
+[submodule "riptide-hw"]
+	path = riptide-hw
+	url = https://github.com/osu-uwrt/riptide-hw
