@@ -1,0 +1,14 @@
+language: generic
+sudo: required
+dist: trusty
+
+install:
+  - sudo pip install sphinx
+  - sudo pip install sphinx_rtd_theme
+
+script:
+  - make sphinx
+  - make doxygen
+
+notifications:
+  email: false
