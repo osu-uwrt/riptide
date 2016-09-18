@@ -53,6 +53,7 @@ Thrusters             M2.5
 Marker Dropper        3/32"
 =============== =================
 
+
 Assembly
 ~~~~~~~~
 
@@ -430,7 +431,7 @@ Main Housing
 ------------
 
 .. warning::
-Do not take apart main housing!
+   Do not take apart main housing!
 
 Removal
 ~~~~~~~
