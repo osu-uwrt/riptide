@@ -7,8 +7,8 @@ install:
   - sudo pip install sphinx_rtd_theme
 
 script:
-  - make sphinx
-  - make doxygen
+  - cd sphinx
+  - make html
 
 notifications:
   email: false
