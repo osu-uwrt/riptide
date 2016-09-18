@@ -43,16 +43,31 @@ Frame
 Fasteners
 ~~~~~~~~~
 
+=============== =================
+Part            Hex  Driver Size
+=============== =================
+Chassis               9/64"
+Thrusters             M2.5
+Marker Dropper        3/32"
+=============== =================
+
+
 Assembly
 ~~~~~~~~
 
 Mounting
 ~~~~~~~~
+Main parts mounted directly to chassis: thrusters, marker dropper, manipulator
 
+Note: Must take apart part of chassis to 100% disassemble manipulator
 
 
 Thrusters
 ---------
+Removal
+~~~~~~~~
+#. Remove subconn from subconn plate. Note: use colour method to keep track of thruster
+#. 3-32 hex key to unscrew 4 bolts connecting thruster to chassis
 
 The thrusters have been taped in colored bands.
 
@@ -131,6 +146,7 @@ Assembly
 #. Place the DVL Tube Cap gasket on the tube.
 #. Place the DVL cap on the DVL Tube Cap gasket.
 #. Secure the DVL cap using 6 DVL Tube Cap fasteners.
+#. Line up the 'ff' label on DVL with 'ff' label on housing for buoyancy.
 
 .. note::
    For the time being the outermost rear fan bolts must be removed to insert and remove the electronics rocket.
@@ -283,8 +299,10 @@ Assembly
 Mounting
 ~~~~~~~~
 
-#. Acoustics housing secured to main housing. HOW?
-#. Latch secured. WHO? WHAT? WHERE? WHY? WHEN?
+#. 2 Man Job: 1st person lifts robot straight up by front chassis handles, exposing robot under-belly
+#. 2nd person holds acoustic housing and unlatch. Gently pull acoustic housing from chassis. Note: Subconn still connected!
+#. Remove Subconn
+#. Relatch the latch. Set robot down.
 
 
 Battery Housings
@@ -373,6 +391,9 @@ Pneumatic Connections:
 
 *	All ports on external pneumatics matrix occupied and secured
 *	Ports on internal pneumatics matrix occupied if necessary and secured
+* pneumatic arrangement:
+
+.. image:: /_static/pneumatic_housing.png
 
 Assembly
 ~~~~~~~~
@@ -394,10 +415,29 @@ Assembly
 Mounting
 ~~~~~~~~
 
-#. Acoustics housing secured to main housing
-#. Latches secured
-#. Times two.
-#. But, W5 + how?
+#. 4 Latches must secure pneumatics housing to chassis
+#. Bolt housing to chassis with 9/64" hex driver
+#. For removal, keep 2 forward latches secured while unscrewing bolts
+
+Removal of Air Tank
+~~~~~~~~~~~~~~~~~~~
+#. Remove hose from nozzle of tank. Close valve securely!
+#. Hold tank and remove 4 screws holding paintball tank to chassis using 4-40 hex key. Note: pull tank towards screws, thruster removal NOT neccessary
+#. Slowly remove tank: Twist tank so delrin mounting points are upward and remove tank.
+
+Main Housing
+------------
+
+.. warning::
+   Do not take apart main housing!
+
+Removal
+~~~~~~~
+#. Unlatch latches on side needed.
+#. Firmly Pull each tube out. Do NOT damage O-ring seals.
+#. Remove Subconn plates and clear interior electronics. Note: careful of red pressure sensor cord. See interior electronics removal.
+#. Unscrew 4 bolts that attach housing to chassis using 9-64 hex key.
+#. Lift main housing straight up.
 
 
 Manipulator
