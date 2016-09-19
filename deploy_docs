@@ -1,7 +1,7 @@
 #!/bin/bash
 
 REMOTE=https://"$GH_TOKEN"@github.com/"$TRAVIS_REPO_SLUG".git
-MESSAGE="Docs updated by Travis build #$TRAVIS_BUILD_NUMBER"
+MESSAGE="Docs updated by Travis build #$TRAVIS_BUILD_NUMBER."
 
 ghp-import -nm "$MESSAGE" sphinx/build/html/
-git push -f "$REMOTE" gh-pages
+git push -fq "$REMOTE" gh-pages
