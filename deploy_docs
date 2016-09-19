@@ -1,7 +1,7 @@
 #!/bin/bash
 
-git clone https://github.com/davisp/ghp-import
+REMOTE=https://"$GH_TOKEN"@github.com/"$TRAVIS_REPO_SLUG".git
+MESSAGE="Docs updated by Travis build #$TRAVIS_BUILD_NUMBER"
 
-./ghp-import/ghp-import.py -n doxygen
-
-git push -f origin gh-pages
+ghp-import -nm "$MESSAGE" sphinx/build/html/
+git push -f "$REMOTE" gh-pages

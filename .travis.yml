@@ -2,13 +2,20 @@ language: generic
 sudo: required
 dist: trusty
 
+branches:
+  only:
+  - master
+
 install:
-  - sudo pip install sphinx
-  - sudo pip install sphinx_rtd_theme
+  - ./install_docs
 
 script:
-  - cd sphinx
-  - make html
+  - ./build_docs
+
+after_success:
+  - ./deploy_docs
 
 notifications:
   email: false
+  slack:
+    secure: DPZfcZyxQEcT5ni0vFzDxeoCNnv+xolRMsNtQv1upJSFviwZYT77CULhb1xa4nzZ8HzlkSIDD+8aLsZG7C7tgpsmy/t7UH7fPzucUddS5yr1haeqT0zOBe9BUWx+p+sndCMvbMhaD9KftFj/G56IqXRPmoAZLblD/PjsI9dqp7TrhPKNWQJhXhdP8MTpSeRPaPl8ZahznLkCdLMDmJv5P3rO0iUbZ1lXmDOU1Oac9pdMh9WvQnix7OwdcpodMJhEweWylJ5xPOA8Bqr7m/vfCLlzGuTEjHK2oliACUwX/IC7d4Cq1BJPwFZhjtl32sp1S5gevfkTGEj7NqeWeCTxXwDxPaYD7iOoW+BWsJ5JraNOg2pjGoOFtXSoJf9epD9KG7yJzEnFIPJF1GAU9yp0wlsPYGmPH3GMJctdmydAY3LGKGkVOcy3OafZTkFllFzmBP3/F5j0Z546AMvbH6Qr2avORtXRK3Umgqup0hohcfVXfzdoU7zzjoUAK4nIvo5bmLEAt78jEyIDEJPE4ntRs+2WFxcLXJ9rp9pw3ZW64Z0jZE5OY6r7opXPbW5hl4eOZGCEnc40iYNSiGgtLmgR43j2ok6MHokmqHMyGDvA4sxJRn8XTNBXpatTgAyiPh5YaiRdbvaI0ukJqRX5KhSCZNXg6sRRem0t9FrzR6MEaJI=
