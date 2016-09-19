@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pip install ghp-pages
+sudo pip install ghp-import
 
 sudo pip install sphinx
 sudo pip install sphinx_rtd_theme
