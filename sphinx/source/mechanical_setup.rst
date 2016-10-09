@@ -11,6 +11,8 @@ Guidelines
 
 Fasteners
 ~~~~~~~~~
+Use antiseize if aluminum is used in the mate.
+Look up max tightening torque for bolt size and materials mating.
 
 LOCTITE 222 THREADLOCKER is applied to all bolts/screws threading into stainless steel or connecting the sealing latches to the main aluminum housing. MARINE GRADE ANTI-SEIZE is applied to all other bolts/screws threading into aluminum prior to fastening. 8-32 bolts used to compress gasket should be tightened to a torque of 9 inch-pounds. All other bolts/screws should be hand-tightened.
 
@@ -37,11 +39,12 @@ Anti-Seize
 
 Roll the last quarter inch of the bolt in anti-seize making sure to thoroughly coat all threads. Wipe the excess off such that the remaining anti-seize completely fills the space between threads. (Roll threads of coated bolt around threads of uncoated bolt to transfer excess anti-seize and ensure threads are fully coated.)
 
-Frame
------
+Chassis
+-------
 
 Fasteners
 ~~~~~~~~~
+Use only SS 18-8 #8-32 3/4" bolts to tighten components together with antiseize.
 
 =============== =================
 Part            Hex  Driver Size
@@ -54,6 +57,9 @@ Marker Dropper        3/32"
 
 Assembly
 ~~~~~~~~
+Cross braces from main housing have Loctite 271 high strength on bolts.
+If you need to unbolt these, heat it up first (be careful of fumes)
+Tightening back with Loctite 271
 
 Mounting
 ~~~~~~~~
@@ -338,10 +344,11 @@ Housing Lid   1     Gasket      None
 Assembly
 ~~~~~~~~
 
-#. The relief valve probably has to go on to the mounting block first.
-#. Then the valve goes on, I assume.
-#. Secure the valve assembly to the housing using four relief valve bolts.
+#. The relief valve has to go on to the mounting block FIRST.
+#. Screw NPT thread valve onto mounting block.
+#. Secure the valve assembly to the housing using 4 relief valve bolts.
 #. Place the housing lid gasket on the housing.
+#. Place the lid gasket onto the housing.
 #. Place the lid onto the housing and gasket.
 #. Secure the lid using 8 fasteners in a star pattern.
 
@@ -429,10 +436,34 @@ Main Housing
 ------------
 
 .. warning::
-   Do not take apart main housing!
+   Careful not to twist or tear O-rings during assembly
+   Visually check the mating interfaces have a uniform gap
 
-Removal
-~~~~~~~
+Fasteners
+~~~~~~~~~
+Back cap: #8 screws
+
+Front Cap Assembly
+~~~~~~~~~~~~~~~~~~
+.# Place the front cap bottom stainless steel rods in the channels.
+.# Line up the sealing surfaces.
+.# Engage latches by carefully forcing front cap into main housing.
+.# Pull latches at the same time to fully close the front of the vehicle.
+
+Back Cap Assembly
+~~~~~~~~~~~~~~~~~
+.# Attach the Acrylic plate to rear end of the Aluminum tube.
+.# Place the #8 screws on the aluminum ring through the acrylic plate.
+.# Place the gasket on all the screws.
+.# Torque screws to 9 in-lb in a star pattern.
+.# Lube 2 X-profile Bruna-N 265 O-Rings and place in O-Ring grooves.
+.# Slide the back cap around the backplane.
+.# Line up the sealing surfaces.
+.# Engage latches by carefully forcing front cap into main housing.
+.# Pull latches at the same time to fully close the front of the vehicle.
+
+Disassembly
+~~~~~~~~~~~
 #. Unlatch latches on side needed.
 #. Firmly Pull each tube out. Do NOT damage O-ring seals.
 #. Remove Subconn plates and clear interior electronics. Note: careful of red pressure sensor cord. See interior electronics removal.
@@ -443,7 +474,15 @@ Removal
 Manipulator
 -----------
 
-* Cameron
+Fasteners
+~~~~~~~~~
+Check the screws that hold the two linkages together after each pool testing
+
+Assembly
+~~~~~~~~
+.# Check the Pneumatic connections by grabbing the black tubing and giving a gentle push towards the fitting
+.# Remove the Velcro straps before use.
+.# See control matrix table on the actuation of the Pneumatic piston
 
 **Control matrix:**
 
@@ -456,13 +495,6 @@ off on  rev/fwd
 off off relax
 === === =======
 
-
-Fasteners
-~~~~~~~~~
-
-Assembly
-~~~~~~~~
-
 Mounting
 ~~~~~~~~
 
@@ -472,16 +504,29 @@ Mounting
 Marker Droppers
 ---------------
 
-* Nathan
-
 Fasteners
 ~~~~~~~~~
+#4-40 1" bolts x 2
 
 Assembly
 ~~~~~~~~
+.# Place the marker chamber on a flat surface, open end down.
+.# Place the magnet chamber base on top of the marker chamber.
+.# Slip cylindrical magnet over the magnet chamber base.
+.# Place the magnet chamber barrel on the chamber base.
+.# Place the magnet chamber top on the magnet chamber barrel.
+.# Fasten the assembly with three countersunk #4-40 1" bolts.
+.# Tighten bolts to 45 oz-in.
+.# Attach a push-to-connect one-way valve to the top of the magnet chamber.
+.# Place market in marker chamber.
+.# Attach assembly to the chassis underside of the vehicle with two #4-40 1" bolts.
+.# Hand-tightened
+.# Connect Pneumatic hose to the push-to-connect one-way valve.
+.# To operate, actuate solenoid to release pressurized air and drop marker
 
 Mounting
 ~~~~~~~~
+Directly to chassis
 
 **Attaching the hoses:**
 
@@ -498,13 +543,22 @@ Fasteners
 
 Assembly
 ~~~~~~~~
+torpedo barrel x 2:
+.# Apply #014 O-ring to the O-ring groove on the shaft of the end-cap.
+.# Insert the end-cap onto the barrel and secure with one countersunk#4-40 bolt 1/2".
+.# Attach the push-to-connect one-way valve to the small hole in the end-cap and secure with Teflon tape.
+.# Put each of the barrel mount's holes over either end of the barrel.
+.# Attach the Barrel-Barrel Mount assemble to top side of the front chamber of the vehicle.
+.# Attach pneumatic hose to push-to-connect one-way air valve.
+.# Push torpedo into barrel until the torpedo shaft slides over the O-ring on the end-cap.
+
+Operation:
+Actuate solenoid to release pressurized air and fire torpedo.
 
 Mounting
 ~~~~~~~~
-
-#. Push the black plastic thing in.
-#. Push the hose in until it stops.
-#. Release the black plastic thing.
+#. Push the black Delrin barrel into the white Delrin mounts, and attach directly to maint housing.
+#. Push the pneumatic hose in the barrel until it bottoms out.
 
 
 Exterior Cables & Hoses
