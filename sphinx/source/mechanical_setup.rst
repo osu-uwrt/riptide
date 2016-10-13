@@ -184,7 +184,7 @@ REPEAT THE PORT PROCEDURE WITH THE STARBOARD SIDE...
 * Add screws! Four, 4-40, 3/8", hand-tight, stainless
 
 #. Bolt the backplane to the electronics rocket's four canty-lever rods using backplane screws and washers.
-#. Connect all the cables, good luck bro.
+#. Connect all the cables.
 
 **After Extension:**
 
@@ -197,7 +197,7 @@ Attaching the lid:
 
 Preparing the o-rings:
 
-#. Clean out the o-ring housing grooves with cotton swabs, wash yo bitch as hands or don glove style ppe.
+#. Clean out the o-ring housing grooves with cotton swabs, wash your hands or don gloves.
 #. With clean hands squeeze a "pea and a schmear" sized amount of o-ring grease onto your thumb and forefinger.
 #. Pull the o-ring through the grease while applying steady pressure to ensure the o-ring is evenly coated. (Perform 3 revolutions of the o-ring to ensure an even coating.)
 #. Starting with the o-ring in contact with the aftermost groove, stretch the o-ring around the circumference of the tube and release it into it's slot.
@@ -227,7 +227,7 @@ Attaching the lid:
 
 Preparing the o-rings:
 
-#. Clean out the o-ring grooves with cotton swabs, wash yo bitch as hands or don glove-style PPE.
+#. Clean out the o-ring grooves with cotton swabs, wash your hands or don gloves.
 #. With clean hands squeeze a "pea and a schmear" sized amount of o-ring grease onto your thumb and forefinger.
 #. Pull the o-ring through the grease while applying steady pressure to ensure the o-ring is evenly coated.
 #. Starting with the o-ring in contact with a groove stretch the first o-ring around the circumference of the tube and release it into it's slot.
