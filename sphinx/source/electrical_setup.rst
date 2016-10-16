@@ -32,12 +32,7 @@ Jumper Configuration
 --------------------
 
 Motherboard Jumper Diagram:
-.. image:: /_static/motherboard.jpeg
-   :height: 696 px
-   :width: 717 px
-   :scale: 50 %
-   :alt: Motherboard
-   :align: center
+.. image:: /_static/motherboard.jpg
 
 +----------------------------------------------+------------------+-------------+--------------------------------------------+
 | Name                                         | Setting for AUV  | Pins Jumped | Notes                                      |
