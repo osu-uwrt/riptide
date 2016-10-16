@@ -8,28 +8,36 @@ Jumpers & Wiring
 Wiring
 ------
 
-USB3
-----
++------------------------------+----------------+
+| Connection To:               | Type:          |
++------------------------------+----------------+
+| Backplane                    | Computer Power |
++------------------------------+----------------+
+| Backplane                    | RS-232         |
++------------------------------+----------------+
+| Backplane                    | RS-232         |
++------------------------------+----------------+
+| PointGrey BlackFly Left      | USB 3.0        |
++------------------------------+----------------+
+| PointGrey BlackFly Right     | USB 3.0        |
++------------------------------+----------------+
+| PointGrey BlackFly Down      | USB 3.0        |
++------------------------------+----------------+
+| LORD MicroStrain IMU-3DM-GX4 | USB 3.0        |
++------------------------------+----------------+
+| Depth Sensor                 | USB 2.0        |
++------------------------------+----------------+
 
-- LORD MicroStrain IMU-3DM-GX4
-- PointGrey BlackFly - Left
-- PointGrey BlackFly - Right
-- PointGrey BlackFly - Down
+Jumper Configuration
+--------------------
 
-.. warning::
-  Should further USB ports be required it will be necessary to connect them to header pins located somewhere on the motherboard. These are not USB3 capable?!
-
-
-RS-232
-------
-
-- DB-9 Connector to something...
-- DB-9 Connector to something else...
-- Motherboard header to this...
-- Motherboard header to that...
-
-Jumpers
--------
+Motherboard Jumper Diagram:
+.. image:: motherboard.jpeg
+   :height: 696 px
+   :width: 717 px
+   :scale: 50 %
+   :alt: Motherboard
+   :align: center
 
 +----------------------------------------------+------------------+-------------+--------------------------------------------+
 | Name                                         | Setting for AUV  | Pins Jumped | Notes                                      |
@@ -71,3 +79,5 @@ Uncomment:
 #GRUB_TERMINAL=console
 
 sudo update-grub
+
+Computer Boot Procedure
