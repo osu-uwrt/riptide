@@ -95,6 +95,16 @@ When all boards are mounted to the backplane, the backplane may now be mounted i
 
 The kill switch plugs into the small, white Molex connector on the Thruster Controller Board; the ON-OFF switch plugs into the same model connector on the Power Distribution Board. There is a square, four pronged connector that connects the mother board to the 12 V DC/DC Converter. Finally, the two batteries plug into the Power Distribution Board using Molex Super Sabre connectors. 
 
+Pneumatics Electronics
+----------------------
+The pneumatics electronics were set into the electronics mounting frame and screwed in. 
+
+Battery Board
+-------------
+The battery boards were mounted by a screw in each corner of the board. These screws went into delrin stakes that lifted it above the wiring of the batteries. 
+
+
+
 
 .. _Point Grey: https://www.ptgrey.com/
 .. _Blackfly: https://www.ptgrey.com/blackfly-usb3-vision-cameras/
