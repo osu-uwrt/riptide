@@ -32,7 +32,7 @@ Jumper Configuration
 --------------------
 
 Motherboard Jumper Diagram:
-.. image:: motherboard.jpeg
+.. image:: /_static/motherboard.jpeg
    :height: 696 px
    :width: 717 px
    :scale: 50 %
