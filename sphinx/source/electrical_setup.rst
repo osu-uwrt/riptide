@@ -76,13 +76,13 @@ sudo update-grub
 Computer Boot Procedure Outside of Vehicle
 ------------------------------------------
 
-# Check that the mother board is set to 12V mode. See\: http://store.enochsystems.com/resources/techdocs/2014/MX87QD_Manual_V1.0.pdf#page=36
-# Attach power cord (frayed ends to molex connector) to binding post terminals on Power Supply
-## Use Channel 1 & Channel 2 in parallel
-# Plug in Power Supply
-# Set supply to CV (Constant Voltage)
-## Turn current dial until the indicator LED nearby lights up green. This indicates that it is in CV mode.
-# Set supply Voltage to 12.0V
-# Connect power cord to mother board.
-# Computer should boot. 
-## To launch GUI: `sudo service lightdm start`
+#. Check that the mother board is set to 12V mode. See\: http://store.enochsystems.com/resources/techdocs/2014/MX87QD_Manual_V1.0.pdf#page=36
+#. Attach power cord (frayed ends to molex connector) to binding post terminals on Power Supply
+##. Use Channel 1 & Channel 2 in parallel
+#. Plug in Power Supply
+#. Set supply to CV (Constant Voltage)
+##. Turn current dial until the indicator LED nearby lights up green. This indicates that it is in CV mode.
+#. Set supply Voltage to 12.0V
+#. Connect power cord to mother board.
+#. Computer should boot. 
+##. To launch GUI: `sudo service lightdm start`
