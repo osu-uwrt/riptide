@@ -30,8 +30,6 @@ Wiring
 
 Jumper Configuration
 --------------------
-
-Motherboard Jumper Diagram:
 .. image:: /_static/motherboard.jpg
 
 +----------------------------------------------+------------------+-------------+--------------------------------------------+
