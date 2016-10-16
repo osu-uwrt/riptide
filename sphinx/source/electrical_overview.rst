@@ -84,6 +84,16 @@ Three hydrophones mounted below the vehicle provide data for determining the pin
 The acoustics processing is currently being completed with a Codec shield connected to an Arduino Uno. The shield has a WM8731S Codec for capturing the hydrophone data, which is then transferred to the main computer for processing.
 
 
+Backplane Assembly 
+------------------
+
+First, connect all boards to the backplane via edge connectors. The five and twelve volt DC/DC converters should be on opposite sides; with the twelve volt board on the opposite side of the power distribution board. The power distribution board is plugged into the outermost (left) side of the backplane, where the two battery connectors come through the main housing. Finally, the thruster controller board is plugged into the bottom (horizontal) edge connectors, with all five of the thruster controller boards plugged in overtop. 
+
+A quick summary is as follows: the middle column of the backplane only has horizontal edge connector slots. There is one extra slot in this column. From top to bottom, there should be [empty: ESC: ESC: ESC: ESC: ESC: THRUSTERCTRL]. From left to right, with card edges facing out, the order should be [PDB: 5V: EMPTY: 12V]. 
+
+When all boards are mounted to the backplane, the backplane may now be mounted into the vehicle. The two longer rubber mounts slide on the mounting rods of the main electronic housing. Then, the 10 ESC's must naturally be connected to the thrusters. Red goes to red, yellow goes to yellow, black goes to black. Currently, we have no steadfast way (10/16/2016) to delineate which set of cables are connected to each ESC, as well as which order the ESC Boards are connected in, due to repetitive failure of relays. This is the first order of business in the new board set up. 
+
+The kill switch plugs into the small, white Molex connector on the Thruster Controller Board; the ON-OFF switch plugs into the same model connector on the Power Distribution Board. There is a square, four pronged connector that connects the mother board to the 12 V DC/DC Converter. Finally, the two batteries plug into the Power Distribution Board using Molex Super Sabre connectors. 
 
 
 .. _Point Grey: https://www.ptgrey.com/
@@ -95,3 +105,5 @@ The acoustics processing is currently being completed with a Codec shield connec
 
 .. _LORD MicroStrain: https://www.microstrain.com/
 .. _3DM-GX4-25: http://www.microstrain.com/inertial/3dm-gx4-25/
+
+
