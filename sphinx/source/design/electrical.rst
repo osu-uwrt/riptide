@@ -27,7 +27,7 @@ Backplane
 
 The backplane is a circular printed circuit board with 11 female connectors. All of the boards in the inside housing mount to this board, creating a wireless system for all the boards to communicate and source power from one another, as shown in Fig 12.
 
-.. figure:: _static/journal/f12_backplane_layout.png
+.. figure:: ../_static/journal/f12_backplane_layout.png
    :scale: 100%
    :align: center
 
@@ -36,7 +36,7 @@ The backplane is a circular printed circuit board with 11 female connectors. All
 The power system is mounted on the four edge connectors from either side, while the thruster controller board and five electronic speed controller (ESC) boards are mounted down the center, as the ESC boards must receive signals from the master thruster board. Five and twelve volts are converted from the balanced load sourced from the power distribution board and then distributed to each board through the designated pins. However, the boards may communicate only within their system; e.g. the thruster controller board may only talk to the ESC boards, but not the 12 V board. By separating the communication signals, the amount of noise is reduced. Finally, the backplane has four holes in each corner. This is where the board is mounted in the main housing. An image of the assembled electronics mounted on the backplane can be seen in Fig 13.
 
 
-.. figure:: _static/journal/f13_backplane_assembly.png
+.. figure:: ../_static/journal/f13_backplane_assembly.png
    :scale: 100%
    :align: center
 
@@ -48,7 +48,7 @@ Power Distribution
 
 The power distribution board manages the load from both batteries and communicates the status of all the power system boards to the computer. First, both currents travel through a 30 amp fuse to prevent an overcurrent in the system. Current sensors individually monitor both batteries, and then the current paths are merged using a low-loss power path controller. The balanced voltage then enters the edge connector. This board has two RS-232 connections, as well as three small Molex connectors. Because there is a large current flow through this board, there are several decoupling capacitors around the microcontroller to remove noise. The board layout for the power distribution board can be seen in Fig 14.
 
-.. figure:: _static/journal/f14_pdb_layout.png
+.. figure:: ../_static/journal/f14_pdb_layout.png
    :scale: 100%
    :align: center
 
@@ -74,7 +74,7 @@ ESC Controllers
 
 The ESC board is designed to send a PWM signal to each motor controller, as well as monitoring the status of each thruster and controller. Each individual board has two motor controllers. The battery power comes in from the backplane. The power then goes through two relays that are hardwirecontrolled by the kill switch. The relays are fail open, or in other words the kill switch has to be providing 5 V to each relay in order for the thrusters to be powered. There are four sensors on each ESC board: a current sensor and temperature sensor for each motor controller. An attiny1634 microcontroller communicates with the thruster control board over an I2C bus, receiving the desired thrust level and sending the sensor data for each thruster. An image of a complete ESC board can be seen in Fig 15.
 
-.. figure:: _static/journal/f15_esc_board.png
+.. figure:: ../_static/journal/f15_esc_board.png
    :scale: 100%
    :align: center
 
@@ -109,24 +109,24 @@ Three hydrophones mounted below the vehicle provide data for determining the pin
 The acoustics processing is currently being completed with a Codec shield connected to an Arduino Uno. The shield has a WM8731S Codec for capturing the hydrophone data, which is then transferred to the main computer for processing.
 
 
-Backplane Assembly 
+Backplane Assembly
 ------------------
 
-First, connect all boards to the backplane via edge connectors. The five and twelve volt DC/DC converters should be on opposite sides; with the twelve volt board on the opposite side of the power distribution board. The power distribution board is plugged into the outermost (left) side of the backplane, where the two battery connectors come through the main housing. Finally, the thruster controller board is plugged into the bottom (horizontal) edge connectors, with all five of the thruster controller boards plugged in overtop. 
+First, connect all boards to the backplane via edge connectors. The five and twelve volt DC/DC converters should be on opposite sides; with the twelve volt board on the opposite side of the power distribution board. The power distribution board is plugged into the outermost (left) side of the backplane, where the two battery connectors come through the main housing. Finally, the thruster controller board is plugged into the bottom (horizontal) edge connectors, with all five of the thruster controller boards plugged in overtop.
 
-A quick summary is as follows: the middle column of the backplane only has horizontal edge connector slots. There is one extra slot in this column. From top to bottom, there should be [empty: ESC: ESC: ESC: ESC: ESC: THRUSTERCTRL]. From left to right, with card edges facing out, the order should be [PDB: 5V: EMPTY: 12V]. 
+A quick summary is as follows: the middle column of the backplane only has horizontal edge connector slots. There is one extra slot in this column. From top to bottom, there should be [empty: ESC: ESC: ESC: ESC: ESC: THRUSTERCTRL]. From left to right, with card edges facing out, the order should be [PDB: 5V: EMPTY: 12V].
 
-When all boards are mounted to the backplane, the backplane may now be mounted into the vehicle. The two longer rubber mounts slide on the mounting rods of the main electronic housing. Then, the 10 ESC's must naturally be connected to the thrusters. Red goes to red, yellow goes to yellow, black goes to black. Currently, we have no steadfast way (10/16/2016) to delineate which set of cables are connected to each ESC, as well as which order the ESC Boards are connected in, due to repetitive failure of relays. This is the first order of business in the new board set up. 
+When all boards are mounted to the backplane, the backplane may now be mounted into the vehicle. The two longer rubber mounts slide on the mounting rods of the main electronic housing. Then, the 10 ESC's must naturally be connected to the thrusters. Red goes to red, yellow goes to yellow, black goes to black. Currently, we have no steadfast way (10/16/2016) to delineate which set of cables are connected to each ESC, as well as which order the ESC Boards are connected in, due to repetitive failure of relays. This is the first order of business in the new board set up.
 
-The kill switch plugs into the small, white Molex connector on the Thruster Controller Board; the ON-OFF switch plugs into the same model connector on the Power Distribution Board. There is a square, four pronged connector that connects the mother board to the 12 V DC/DC Converter. Finally, the two batteries plug into the Power Distribution Board using Molex Super Sabre connectors. 
+The kill switch plugs into the small, white Molex connector on the Thruster Controller Board; the ON-OFF switch plugs into the same model connector on the Power Distribution Board. There is a square, four pronged connector that connects the mother board to the 12 V DC/DC Converter. Finally, the two batteries plug into the Power Distribution Board using Molex Super Sabre connectors.
 
 Pneumatics Electronics Assembly
 -------------------------------
-The pneumatics electronics were set into the electronics mounting frame and screwed in. 
+The pneumatics electronics were set into the electronics mounting frame and screwed in.
 
 Battery Board Assembly
 ----------------------
-The battery boards were mounted by a screw in each corner of the board. These screws went into delrin stakes that lifted it above the wiring of the batteries. 
+The battery boards were mounted by a screw in each corner of the board. These screws went into delrin stakes that lifted it above the wiring of the batteries.
 
 
 
@@ -140,5 +140,3 @@ The battery boards were mounted by a screw in each corner of the board. These sc
 
 .. _LORD MicroStrain: https://www.microstrain.com/
 .. _3DM-GX4-25: http://www.microstrain.com/inertial/3dm-gx4-25/
-
-
