@@ -27,13 +27,32 @@ Backplane
 
 The backplane is a circular printed circuit board with 11 female connectors. All of the boards in the inside housing mount to this board, creating a wireless system for all the boards to communicate and source power from one another, as shown in Fig 12.
 
+.. figure:: _static/journal/f12_backplane_layout.png
+   :scale: 100%
+   :align: center
+
+   Fig 12. Board layout of backplane.
+
 The power system is mounted on the four edge connectors from either side, while the thruster controller board and five electronic speed controller (ESC) boards are mounted down the center, as the ESC boards must receive signals from the master thruster board. Five and twelve volts are converted from the balanced load sourced from the power distribution board and then distributed to each board through the designated pins. However, the boards may communicate only within their system; e.g. the thruster controller board may only talk to the ESC boards, but not the 12 V board. By separating the communication signals, the amount of noise is reduced. Finally, the backplane has four holes in each corner. This is where the board is mounted in the main housing. An image of the assembled electronics mounted on the backplane can be seen in Fig 13.
+
+
+.. figure:: _static/journal/f13_backplane_assembly.png
+   :scale: 100%
+   :align: center
+
+   Fig 13. Custom Electrical Assembly.
 
 
 Power Distribution
 ~~~~~~~~~~~~~~~~~~
 
 The power distribution board manages the load from both batteries and communicates the status of all the power system boards to the computer. First, both currents travel through a 30 amp fuse to prevent an overcurrent in the system. Current sensors individually monitor both batteries, and then the current paths are merged using a low-loss power path controller. The balanced voltage then enters the edge connector. This board has two RS-232 connections, as well as three small Molex connectors. Because there is a large current flow through this board, there are several decoupling capacitors around the microcontroller to remove noise. The board layout for the power distribution board can be seen in Fig 14.
+
+.. figure:: _static/journal/f14_pdb_layout.png
+   :scale: 100%
+   :align: center
+
+   Fig 14. Board layout of power distribution board.
 
 
 Power Conversion
@@ -54,6 +73,12 @@ ESC Controllers
 ~~~~~~~~~~~~~~~
 
 The ESC board is designed to send a PWM signal to each motor controller, as well as monitoring the status of each thruster and controller. Each individual board has two motor controllers. The battery power comes in from the backplane. The power then goes through two relays that are hardwirecontrolled by the kill switch. The relays are fail open, or in other words the kill switch has to be providing 5 V to each relay in order for the thrusters to be powered. There are four sensors on each ESC board: a current sensor and temperature sensor for each motor controller. An attiny1634 microcontroller communicates with the thruster control board over an I2C bus, receiving the desired thrust level and sending the sensor data for each thruster. An image of a complete ESC board can be seen in Fig 15.
+
+.. figure:: _static/journal/f15_esc_board.png
+   :scale: 100%
+   :align: center
+
+   Fig 15. ESC circuit board.
 
 
 External Electronics

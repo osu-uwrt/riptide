@@ -11,7 +11,11 @@ Robot Operating System
 
 The team has elected to build most of its software using Robot Operating System (ROS), a modular framework for collaborate robotic software development. The modularity of ROS eases efforts to break the software system into manageable projects throughout the school year and then integrate them into the full system as they are completed. The collaborative aspect of ROS encourages many researchers and corporations to provide open source modules (called packages in ROS) which implement a variety of algorithms and device drivers. By taking advantage of this pre-existing software, the team saves significant development time and gains the ability to learn from the work of experts. The team has created a number of its own packages to operate its AUV. The most significant packages are Autonomy, Estimation, Navigation and Vision, as seen in Fig 16.
 
-.. image:: /_static/package_stack.png
+.. figure:: _static/journal/f16_software_stack.png
+   :scale: 100%
+   :align: center
+
+   Fig 16. Software package stack.
 
 The Autonomy package runs the mission by creating a sequence of desired states throughout the competition. The Estimation package continuously analyzes feedback to determine the vehicles current state. To travel throughout the course, the Navigation package resolves discrepancies between the desired and current states to create thruster commands. The Vision package handles the vehicle’s primary sensors, the forward-facing stereo camera system and the downward-facing monocular camera system.
 
@@ -41,6 +45,11 @@ Navigation
 
 The current state of the vehicle, determined from the Kalman filter, is used in conjunction with the desired state provided by the state machine and several PID controllers to ascertain required x, y, and z acceleration values. The PIDs are configured and outputs calculated by leveraging the Control Toolbox class in ROS [5]. The PID controllers are implemented separately for linear and angular accelerations, as shown in Fig 18, and for each axis in order to provide the most accurate PID parameters for each case. The PID parameters can be updated real time by using Dynamic Reconfigure [6]. The desired state can also be provided by a joystick from the surface in the case of tethered movement during the testing phase. This capability allows for easy tuning of the PID controllers and stabilization assessment.
 
+.. figure:: _static/journal/f18_pid_diagram.png
+   :scale: 100%
+   :align: center
+
+   Fig 18. PID diagram
 
 Estimation
 ~~~~~~~~~~
@@ -66,6 +75,12 @@ The vehicle is modeled using the Universal Robot Description Format (URDF) to cr
 The URDF models the vehicle as a graph. This graph takes the form of a tree, where each node represents a physical section of the vehicle (link) and each edge represents how those links are connected (joints). Storing vehicle parameters in this way allows graph-based algorithms to easily determine how various portions of the vehicle are related to others. For example, determining the transformation between two links by identifying all intermediate links and combining their transformations.
 
 The team is working to utilize its models in the future to add significant simulation capabilities to the development cycle. This addition would allow the software team to better prepare for vehicle testing before construction has been completed. It is hoped that this will eventually lead to the ability to simulate designs before they are finalized, further enhancing the design cycle. The progress of the simulator can be seen in Fig 17.
+
+.. figure:: _static/journal/f17_simulator.png
+   :scale: 100%
+   :align: center
+
+   Fig 17. Image of simulator environment.
 
 
 Acoustics Processing
