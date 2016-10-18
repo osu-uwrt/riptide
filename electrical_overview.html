@@ -1,0 +1,346 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Electrical System &mdash; Riptide 0.0.9 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Riptide 0.0.9 documentation" href="index.html"/>
+        <link rel="next" title="Mechanical System" href="mechanical_overview.html"/>
+        <link rel="prev" title="Riptide Documentation" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Riptide
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Design Overview</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Electrical System</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#onboard-computer">Onboard Computer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sensors">Sensors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#internal-electronics">Internal Electronics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#backplane">Backplane</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#power-distribution">Power Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#power-conversion">Power Conversion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#thruster-controller">Thruster Controller</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#esc-controllers">ESC Controllers</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#external-electronics">External Electronics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#battery-monitoring">Battery Monitoring</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pneumatics-controller">Pneumatics Controller</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#acoustics-processing">Acoustics Processing</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#backplane-assembly">Backplane Assembly</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pneumatics-electronics-assembly">Pneumatics Electronics Assembly</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#battery-board-assembly">Battery Board Assembly</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mechanical_overview.html">Mechanical System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software_overview.html">Software System</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Setup &amp; Assembly</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="electrical_setup.html">Jumpers &amp; Wiring</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mechanical_setup.html">Assembly &amp; Mounting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software_setup.html">Software Installation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="editing.html">Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Riptide</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Electrical System</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="https://github.com/osu-uwrt/riptide/blob/master/docs/source/electrical_overview.rst" class="fa fa-github"> Edit on GitHub</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="electrical-system">
+<h1>Electrical System<a class="headerlink" href="#electrical-system" title="Permalink to this headline">¶</a></h1>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#onboard-computer" id="id5">Onboard Computer</a></li>
+<li><a class="reference internal" href="#sensors" id="id6">Sensors</a></li>
+<li><a class="reference internal" href="#internal-electronics" id="id7">Internal Electronics</a><ul>
+<li><a class="reference internal" href="#backplane" id="id8">Backplane</a></li>
+<li><a class="reference internal" href="#power-distribution" id="id9">Power Distribution</a></li>
+<li><a class="reference internal" href="#power-conversion" id="id10">Power Conversion</a></li>
+<li><a class="reference internal" href="#thruster-controller" id="id11">Thruster Controller</a></li>
+<li><a class="reference internal" href="#esc-controllers" id="id12">ESC Controllers</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#external-electronics" id="id13">External Electronics</a><ul>
+<li><a class="reference internal" href="#battery-monitoring" id="id14">Battery Monitoring</a></li>
+<li><a class="reference internal" href="#pneumatics-controller" id="id15">Pneumatics Controller</a></li>
+<li><a class="reference internal" href="#acoustics-processing" id="id16">Acoustics Processing</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#backplane-assembly" id="id17">Backplane Assembly</a></li>
+<li><a class="reference internal" href="#pneumatics-electronics-assembly" id="id18">Pneumatics Electronics Assembly</a></li>
+<li><a class="reference internal" href="#battery-board-assembly" id="id19">Battery Board Assembly</a></li>
+</ul>
+</div>
+<div class="section" id="onboard-computer">
+<h2><a class="toc-backref" href="#contents">Onboard Computer</a><a class="headerlink" href="#onboard-computer" title="Permalink to this headline">¶</a></h2>
+<p>The computer onboard Riptide for running all software packages and sensors consists of a BCM Advanced Research MX87QD motherboard with an Intel Core i7-4790S CPU.</p>
+</div>
+<div class="section" id="sensors">
+<h2><a class="toc-backref" href="#contents">Sensors</a><a class="headerlink" href="#sensors" title="Permalink to this headline">¶</a></h2>
+<p>The sensor suite that is utilized on Riptide consists of two inertial measurement units (IMU), one <a class="reference external" href="https://www.microstrain.com/">LORD MicroStrain</a> <a class="reference external" href="http://www.microstrain.com/inertial/3dm-gx4-25/">3DM-GX4-25</a> and one 9-DOF RAZOR IMU, for acceleration and orientation information, three <a class="reference external" href="https://www.ptgrey.com/">Point Grey</a> <a class="reference external" href="https://www.ptgrey.com/blackfly-usb3-vision-cameras/">Blackfly</a> USB3 Vision cameras (<a class="reference external" href="https://www.ptgrey.com/blackfly-13-mp-color-usb3-vision-sony-icx445">BFLY-U3-13S2C-CS</a>) for vision processing and visual odometry, one <a class="reference external" href="https://www.bluerobotics.com/">Blue Robotics</a> <a class="reference external" href="https://www.bluerobotics.com/store/electronics/bar30-sensor-r1/">Bar30</a> pressure sensor for measuring the depth of the vehicle, and three Aquarian Audio H1C hydrophones for acoustic signal processing.</p>
+</div>
+<div class="section" id="internal-electronics">
+<h2><a class="toc-backref" href="#contents">Internal Electronics</a><a class="headerlink" href="#internal-electronics" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="backplane">
+<h3><a class="toc-backref" href="#contents">Backplane</a><a class="headerlink" href="#backplane" title="Permalink to this headline">¶</a></h3>
+<p>The backplane is a circular printed circuit board with 11 female connectors. All of the boards in the inside housing mount to this board, creating a wireless system for all the boards to communicate and source power from one another, as shown in Fig 12.</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/f12_backplane_layout.png"><img alt="_images/f12_backplane_layout.png" src="_images/f12_backplane_layout.png" style="width: 503.0px; height: 503.0px;" /></a>
+<p class="caption"><span class="caption-text">Fig 12. Board layout of backplane.</span></p>
+</div>
+<p>The power system is mounted on the four edge connectors from either side, while the thruster controller board and five electronic speed controller (ESC) boards are mounted down the center, as the ESC boards must receive signals from the master thruster board. Five and twelve volts are converted from the balanced load sourced from the power distribution board and then distributed to each board through the designated pins. However, the boards may communicate only within their system; e.g. the thruster controller board may only talk to the ESC boards, but not the 12 V board. By separating the communication signals, the amount of noise is reduced. Finally, the backplane has four holes in each corner. This is where the board is mounted in the main housing. An image of the assembled electronics mounted on the backplane can be seen in Fig 13.</p>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/f13_backplane_assembly.png"><img alt="_images/f13_backplane_assembly.png" src="_images/f13_backplane_assembly.png" style="width: 282.0px; height: 322.0px;" /></a>
+<p class="caption"><span class="caption-text">Fig 13. Custom Electrical Assembly.</span></p>
+</div>
+</div>
+<div class="section" id="power-distribution">
+<h3><a class="toc-backref" href="#contents">Power Distribution</a><a class="headerlink" href="#power-distribution" title="Permalink to this headline">¶</a></h3>
+<p>The power distribution board manages the load from both batteries and communicates the status of all the power system boards to the computer. First, both currents travel through a 30 amp fuse to prevent an overcurrent in the system. Current sensors individually monitor both batteries, and then the current paths are merged using a low-loss power path controller. The balanced voltage then enters the edge connector. This board has two RS-232 connections, as well as three small Molex connectors. Because there is a large current flow through this board, there are several decoupling capacitors around the microcontroller to remove noise. The board layout for the power distribution board can be seen in Fig 14.</p>
+<div class="figure align-center" id="id3">
+<a class="reference internal image-reference" href="_images/f14_pdb_layout.png"><img alt="_images/f14_pdb_layout.png" src="_images/f14_pdb_layout.png" style="width: 502.0px; height: 350.0px;" /></a>
+<p class="caption"><span class="caption-text">Fig 14. Board layout of power distribution board.</span></p>
+</div>
+</div>
+<div class="section" id="power-conversion">
+<h3><a class="toc-backref" href="#contents">Power Conversion</a><a class="headerlink" href="#power-conversion" title="Permalink to this headline">¶</a></h3>
+<p>Power conversion is completed with a 12 V and a 5 V board. The purpose of the 5 V converter board is to take the raw voltage from both batteries and alter the 18.5 V to the desired 5 V. First, the raw voltage flows from the power distribution board to the edge connector. This then follows large traces to a Murata isolated 5 V DC-DC board. The newly converted voltage is then fed into a current sensor, so that the team may monitor the flow of power and potentially cut power from the robot if there is significant overcurrent. After the current has been measured, the 5 V is then sourced into a specified pin on the edge connector, which all other boards use to obtain 5 V. This board also has board-to-wire connectors for fans that will help circulate air throughout the main housing.</p>
+<p>The 12 V converter board simply converts the raw 18.5 V into 12 V in a similar process to the 5 V converter board. However, this board features a trim pot that is connected to the sense pins in order to adjust the output voltage. Again, the output of the 12 V converter board is fed into a current sensor to monitor if the current flow is correct and stable, and then flows into the designated 12 V pin. All other boards will source from this pin for 12 V if needed. This board directly powers the computer to ensure that there are no significant drops in current in order to prevent the system from rebooting</p>
+</div>
+<div class="section" id="thruster-controller">
+<h3><a class="toc-backref" href="#contents">Thruster Controller</a><a class="headerlink" href="#thruster-controller" title="Permalink to this headline">¶</a></h3>
+<p>The thruster control board relays commands between the computer and the individual motor ESC boards, as well as monitoring the status of each ESC and the state of the kill switch. An atmega328 microcontroller communicates with the computer via a RS-232 serial signal. The computer sends the power level for each thruster through this connection then the microcontroller relays these power levels over an I2C port to the ESC boards. Through the same I2C connection each ESC board returns current and controller temperature data. The kill switch is connected through this board, allowing it to activate the thrusters.</p>
+</div>
+<div class="section" id="esc-controllers">
+<h3><a class="toc-backref" href="#contents">ESC Controllers</a><a class="headerlink" href="#esc-controllers" title="Permalink to this headline">¶</a></h3>
+<p>The ESC board is designed to send a PWM signal to each motor controller, as well as monitoring the status of each thruster and controller. Each individual board has two motor controllers. The battery power comes in from the backplane. The power then goes through two relays that are hardwirecontrolled by the kill switch. The relays are fail open, or in other words the kill switch has to be providing 5 V to each relay in order for the thrusters to be powered. There are four sensors on each ESC board: a current sensor and temperature sensor for each motor controller. An attiny1634 microcontroller communicates with the thruster control board over an I2C bus, receiving the desired thrust level and sending the sensor data for each thruster. An image of a complete ESC board can be seen in Fig 15.</p>
+<div class="figure align-center" id="id4">
+<a class="reference internal image-reference" href="_images/f15_esc_board.png"><img alt="_images/f15_esc_board.png" src="_images/f15_esc_board.png" style="width: 379.0px; height: 300.0px;" /></a>
+<p class="caption"><span class="caption-text">Fig 15. ESC circuit board.</span></p>
+</div>
+</div>
+</div>
+<div class="section" id="external-electronics">
+<h2><a class="toc-backref" href="#contents">External Electronics</a><a class="headerlink" href="#external-electronics" title="Permalink to this headline">¶</a></h2>
+<p>Within the secondary modules of Riptide there are several electrical systems in place to provide power to the vehicle and to control several external devices.</p>
+<div class="section" id="battery-monitoring">
+<h3><a class="toc-backref" href="#contents">Battery Monitoring</a><a class="headerlink" href="#battery-monitoring" title="Permalink to this headline">¶</a></h3>
+<p>Riptide is powered by two MaxAmps 8000 mAh 18.5 V Dual Core battery packs, allowing for two to three hours of testing depending on intensity.</p>
+<p>There are battery monitor boards located in each battery housing. They monitor the temperature and pressure within the housing to ensure the battery conditions are safe and allow efficient operation. This status data is relayed to the Power Distribution board over a RS-232 serial connection.</p>
+</div>
+<div class="section" id="pneumatics-controller">
+<h3><a class="toc-backref" href="#contents">Pneumatics Controller</a><a class="headerlink" href="#pneumatics-controller" title="Permalink to this headline">¶</a></h3>
+<p>The Pneumatic control board activates the solenoid valves that direct air to the pneumatic actuators on the AUV. An atmega328 microcontroller receives commands from the computer through an RS-232 to UART interface to control eight separate outputs. Darlington transistors are used to amplify the logic signal to a higher current, 12 volt signal used to drive the solenoid valves.</p>
+</div>
+<div class="section" id="acoustics-processing">
+<h3><a class="toc-backref" href="#contents">Acoustics Processing</a><a class="headerlink" href="#acoustics-processing" title="Permalink to this headline">¶</a></h3>
+<p>Three hydrophones mounted below the vehicle provide data for determining the pinger’s position. The hydrophones are separated such that the underwater pinger’s transmitting wave cannot travel one whole wavelength in between the hydrophones.</p>
+<p>The acoustics processing is currently being completed with a Codec shield connected to an Arduino Uno. The shield has a WM8731S Codec for capturing the hydrophone data, which is then transferred to the main computer for processing.</p>
+</div>
+</div>
+<div class="section" id="backplane-assembly">
+<h2><a class="toc-backref" href="#contents">Backplane Assembly</a><a class="headerlink" href="#backplane-assembly" title="Permalink to this headline">¶</a></h2>
+<p>First, connect all boards to the backplane via edge connectors. The five and twelve volt DC/DC converters should be on opposite sides; with the twelve volt board on the opposite side of the power distribution board. The power distribution board is plugged into the outermost (left) side of the backplane, where the two battery connectors come through the main housing. Finally, the thruster controller board is plugged into the bottom (horizontal) edge connectors, with all five of the thruster controller boards plugged in overtop.</p>
+<p>A quick summary is as follows: the middle column of the backplane only has horizontal edge connector slots. There is one extra slot in this column. From top to bottom, there should be [empty: ESC: ESC: ESC: ESC: ESC: THRUSTERCTRL]. From left to right, with card edges facing out, the order should be [PDB: 5V: EMPTY: 12V].</p>
+<p>When all boards are mounted to the backplane, the backplane may now be mounted into the vehicle. The two longer rubber mounts slide on the mounting rods of the main electronic housing. Then, the 10 ESC&#8217;s must naturally be connected to the thrusters. Red goes to red, yellow goes to yellow, black goes to black. Currently, we have no steadfast way (10/16/2016) to delineate which set of cables are connected to each ESC, as well as which order the ESC Boards are connected in, due to repetitive failure of relays. This is the first order of business in the new board set up.</p>
+<p>The kill switch plugs into the small, white Molex connector on the Thruster Controller Board; the ON-OFF switch plugs into the same model connector on the Power Distribution Board. There is a square, four pronged connector that connects the mother board to the 12 V DC/DC Converter. Finally, the two batteries plug into the Power Distribution Board using Molex Super Sabre connectors.</p>
+</div>
+<div class="section" id="pneumatics-electronics-assembly">
+<h2><a class="toc-backref" href="#contents">Pneumatics Electronics Assembly</a><a class="headerlink" href="#pneumatics-electronics-assembly" title="Permalink to this headline">¶</a></h2>
+<p>The pneumatics electronics were set into the electronics mounting frame and screwed in.</p>
+</div>
+<div class="section" id="battery-board-assembly">
+<h2><a class="toc-backref" href="#contents">Battery Board Assembly</a><a class="headerlink" href="#battery-board-assembly" title="Permalink to this headline">¶</a></h2>
+<p>The battery boards were mounted by a screw in each corner of the board. These screws went into delrin stakes that lifted it above the wiring of the batteries.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="mechanical_overview.html" class="btn btn-neutral float-right" title="Mechanical System" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Riptide Documentation" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, The Underwater Robotics Team.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.0.9',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
