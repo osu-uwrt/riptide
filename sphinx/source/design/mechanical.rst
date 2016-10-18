@@ -11,7 +11,7 @@ Primary Housing Module
 
 The main housing is designed to provide easy access to the electronics for installation, maintenance, and diagnostics while minimizing disassembly. The vessel is made up of three main components, the central cylinder, and the forward and aft compartments. The central cylinder (Fig 4) secures the main housing to the chassis, and is not removed for regular maintenance. SubConn bulkhead connectors are able to pass through flat surfaces which were machined into the side of the housing. This allows for access to electrical components without disconnecting any connectors. To ensure the housing has the ability to be utilized in future years, a port on the underside of the central cylinder was machined to support a Doppler Velocity Logger.
 
-.. figure:: _static/journal/f4_central_section.png
+.. figure:: ../_static/journal/f4_central_section.png
    :scale: 100%
    :align: center
 
@@ -19,7 +19,7 @@ The main housing is designed to provide easy access to the electronics for insta
 
 The forward and aft compartments are fully removable. The assembly is sealed on both sides by double x-profile radial O-rings and secured by locking stainless steel latches. This allows for quick disassembly without risking incorrect reassembly, which could result in a leak. The forward compartment is made of an acrylic tube to allow an observer clear view of the main electronics boards for diagnostic purposes, as well as a downward facing camera view. This housing can be easily expanded and re-used in the future if the electronics volume changes. Both compartments have clear acrylic end caps to support stereoscopic cameras and a  diagnostic screen. A CAD rendering of the primary module can be seen in Fig 5.
 
-.. figure:: _static/journal/f5_main_housing.png
+.. figure:: ../_static/journal/f5_main_housing.png
    :scale: 100%
    :align: center
 
@@ -33,7 +33,7 @@ Auxiliary Housing Modules
 
 The auxiliary external housings contain the batteries, pneumatic valves and switches, and acoustic sensors. These were designed to be able to be moved around on the vehicle during the final design phase to evenly balance the vehicle, reducing the need for additional ballast weight or buoyant material. The auxiliary housing locations on Riptide can be seen in Fig 6.
 
-.. figure:: _static/journal/f6_secondary_modules.png
+.. figure:: ../_static/journal/f6_secondary_modules.png
    :scale: 100%
    :align: center
 
@@ -41,7 +41,7 @@ The auxiliary external housings contain the batteries, pneumatic valves and swit
 
 The four housings have similar sealing methods that have been implemented and tested on previous vehicles. A lid is secured against a sealing flange using evenly spaced fasteners that are tightened to a specified torque, as shown in Fig 7. Housings that require a pass-through connection to the external environment were designed to have a reinforced bulkhead in the region that the connector will pass through. All structural features of the external housings were designed specifically for Riptide and were machined from raw aluminum alloy stock in-house using CNC and manual machining processes.
 
-.. figure:: _static/journal/f7_battery_housing.png
+.. figure:: ../_static/journal/f7_battery_housing.png
    :scale: 100%
    :align: center
 
@@ -49,7 +49,7 @@ The four housings have similar sealing methods that have been implemented and te
 
 To make Riptide start and stop a run, or stop in an emergency, an external switch was designed. Since there were no good options for a commercial watertight button, a housing was designed to hold the buttons. The base consists of a Delrin block with holes for the two buttons as well for the SubConn bulkhead connector. On top of the base is a series of gaskets and aluminum plates to hold the gasket and buttons in place, as shown in Fig 8. There is a momentary switch for starting and a maintained switch for the emergency shutoff. To ensure the kill switch can be pressed in an emergency an additional shaft and large button head was machined and placed on top of the design base.
 
-.. figure:: _static/journal/f8_kill_switch.png
+.. figure:: ../_static/journal/f8_kill_switch.png
    :scale: 100%
    :align: center
 
@@ -61,7 +61,7 @@ Chassis
 
 The vehicle features a modular design that is based around a central chassis, shown in Fig 9. The chassis is made from water-jet aluminum sheets and joined with stainless steel fasteners. There are hard-points for securing the toolpackages and reinforced regions to handle the vehicle. The vehicle may be carried by handles on the front and rear or hung from a crane to allow easy deployment.
 
-.. figure:: _static/journal/f9_chassis.png
+.. figure:: ../_static/journal/f9_chassis.png
    :scale: 100%
    :align: center
 
@@ -86,7 +86,7 @@ Grippers
 
 There are two manipulators on Riptide, located on either side of the vehicle along the forward housing compartment. The claws were designed to reach as far as possible while still maintaining a low profile when not in use. To do this, a two way linear actuator was used. The claw arms were waterjet and Delrin inserts were used around the screws to reduce friction during actuation. Additionally, stainless steel rods with a slider were used to reduce any side loading. A CAD rendering of one of the claws can be seen in Fig 10.
 
-.. figure:: _static/journal/f10_manipulator.png
+.. figure:: ../_static/journal/f10_manipulator.png
    :scale: 100%
    :align: center
 
@@ -106,7 +106,7 @@ Torpedo Launchers
 
 The torpedo launchers consist of two Delrin barrels held in place by two Delrin support structures, shown in Fig 11. The launchers are attached at the top of either side of Riptide’s forward housing compartment. Two torpedoes are launched from the barrels through the internal pressurization of the torpedoes themselves. At the pneumatic pressure’s peak, the torpedo slips passed the O-ring keeping it attached to the pneumatic valve and speeds forward through the water. The torpedoes consists of a 1.5-inch diameter head attached to a 0.75-inch diameter shaft that has 3 stability fins attached at its base. The 5-inch long torpedo fits snugly in the 5.5-inch long barrel to assure that all air pressure is devoted to pushing the torpedo out of the barrel and so the torpedo does not wobble prior to exit.
 
-.. figure:: _static/journal/f11_torpedo_launchers.png
+.. figure:: ../_static/journal/f11_torpedo_launchers.png
    :scale: 100%
    :align: center
 
